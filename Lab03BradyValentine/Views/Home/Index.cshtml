@@ -1,0 +1,62 @@
+﻿@model CalculatorModel
+@{
+    Layout = null;
+    ViewData["Title"] = "Bradys Calculator";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Bradys Future Value Calc</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<div class="container">
+    <div class="jumbotron">
+        <h1><i class="fa fa-money" style="font-size:4rem;background-color:green; color:white; align-content:center">Price Quotation</i></h1>
+        
+    </div>
+    
+</div>
+<body>
+
+    <form asp-action="Index" method="post">
+        <div asp-validation-summary="All"></div>
+
+        <div class="form-group">
+            <label asp-for="Subtotal">Subtotal:</label>
+
+            <input asp-for="Subtotal" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="DiscountPercent">Discount Percent:</label>
+
+            <input asp-for="DiscountPercent" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="DiscountAmount">Discount amount:</label>
+            <input value="@ViewBag.DiscountAmount.ToString("C2")" readonly" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Total">Total:</label>
+            <input value="@ViewBag.Total.ToString("C2")" readonly" />
+
+        </div>
+
+        <button class="btn-success" type="submit">Calculate</button>
+        <button class="btn-success" a asp-action="Index">Clear</button>
+
+
+    </form>
+
+</body>
+</html>
