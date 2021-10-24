@@ -23,6 +23,7 @@ namespace Lab4BradyValentine.Controllers
             var contacts = _context.Contacts.OrderBy(x => x.FirstName)
                 .Select(x => new ContactModel
                 {
+                    Id = x.Id,
                     FirstName = x.FirstName,
                     LastName = x.LastName,
                     Phone = x.PhoneNumber,

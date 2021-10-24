@@ -19,7 +19,7 @@
         @foreach (var contact in Model.Contacts)
         {
             <tr>
-                <td>@contact.FirstName</td>
+                <td><a href="Checkout/Index/@contact.Id">@contact.FirstName</a></td>
                 <td>@contact.LastName</td>
                 <td>@contact.Email</td>
                 <td>@contact.Phone</td>

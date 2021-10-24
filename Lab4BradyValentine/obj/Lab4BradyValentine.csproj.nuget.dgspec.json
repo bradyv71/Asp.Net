@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\valen\\source\\repos\\Lab4BradyValentine\\Lab4BradyValentine.csproj": {}
+    "C:\\xampp\\htdocs\\Asp.Net\\Lab4BradyValentine\\Lab4BradyValentine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\valen\\source\\repos\\Lab4BradyValentine\\Lab4BradyValentine.csproj": {
+    "C:\\xampp\\htdocs\\Asp.Net\\Lab4BradyValentine\\Lab4BradyValentine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\valen\\source\\repos\\Lab4BradyValentine\\Lab4BradyValentine.csproj",
+        "projectUniqueName": "C:\\xampp\\htdocs\\Asp.Net\\Lab4BradyValentine\\Lab4BradyValentine.csproj",
         "projectName": "Lab4BradyValentine",
-        "projectPath": "C:\\Users\\valen\\source\\repos\\Lab4BradyValentine\\Lab4BradyValentine.csproj",
+        "projectPath": "C:\\xampp\\htdocs\\Asp.Net\\Lab4BradyValentine\\Lab4BradyValentine.csproj",
         "packagesPath": "C:\\Users\\valen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\valen\\source\\repos\\Lab4BradyValentine\\obj\\",
+        "outputPath": "C:\\xampp\\htdocs\\Asp.Net\\Lab4BradyValentine\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\valen\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,13 +46,13 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.20, )"
+              "version": "[5.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.20, )"
+              "version": "[5.0.11, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
